@@ -1,0 +1,15 @@
+{
+    "auc": 0.819063901564324,
+    "accuracy": 0.757,
+    "precision": 0.7109893279492356,
+    "recall": 0.6331877729257642,
+    "feature_importance": {
+        "wl_position": 0.8026344776153564,
+        "days_before_travel": 0.022774437442421913,
+        "route_demand_score": 0.02689010463654995,
+        "season_index": 0.027208587154746056,
+        "class_type_encoded": 0.051351290196180344,
+        "train_type_encoded": 0.04810464754700661,
+        "day_of_week_encoded": 0.021036421880126
+    }
+}

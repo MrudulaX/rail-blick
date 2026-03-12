@@ -1,0 +1,606 @@
+{
+  "train_capacity": {
+    "12952": {
+      "name": "Mumbai Rajdhani",
+      "total": 360,
+      "by_class": {
+        "1A": 48,
+        "2A": 96,
+        "3A": 216,
+        "SL": 0
+      }
+    },
+    "12954": {
+      "name": "August Kranti Rajdhani",
+      "total": 468,
+      "by_class": {
+        "1A": 24,
+        "2A": 144,
+        "3A": 300,
+        "SL": 0
+      }
+    },
+    "12910": {
+      "name": "Bandra Terminus Garib Rath",
+      "total": 864,
+      "by_class": {
+        "1A": 0,
+        "2A": 0,
+        "3A": 864,
+        "SL": 0
+      }
+    },
+    "12926": {
+      "name": "Paschim Express",
+      "total": 564,
+      "by_class": {
+        "1A": 12,
+        "2A": 48,
+        "3A": 144,
+        "SL": 360
+      }
+    },
+    "22210": {
+      "name": "Mumbai Duronto",
+      "total": 552,
+      "by_class": {
+        "1A": 48,
+        "2A": 144,
+        "3A": 360,
+        "SL": 0
+      }
+    },
+    "12951": {
+      "name": "New Delhi Rajdhani",
+      "total": 360,
+      "by_class": {
+        "1A": 48,
+        "2A": 96,
+        "3A": 216,
+        "SL": 0
+      }
+    },
+    "12953": {
+      "name": "August Kranti Rajdhani",
+      "total": 468,
+      "by_class": {
+        "1A": 24,
+        "2A": 144,
+        "3A": 300,
+        "SL": 0
+      }
+    },
+    "12909": {
+      "name": "Nizamuddin Garib Rath",
+      "total": 864,
+      "by_class": {
+        "1A": 0,
+        "2A": 0,
+        "3A": 864,
+        "SL": 0
+      }
+    },
+    "12925": {
+      "name": "Paschim Express",
+      "total": 564,
+      "by_class": {
+        "1A": 12,
+        "2A": 48,
+        "3A": 144,
+        "SL": 360
+      }
+    },
+    "22209": {
+      "name": "New Delhi Duronto",
+      "total": 552,
+      "by_class": {
+        "1A": 48,
+        "2A": 144,
+        "3A": 360,
+        "SL": 0
+      }
+    },
+    "12302": {
+      "name": "Howrah Rajdhani",
+      "total": 492,
+      "by_class": {
+        "1A": 48,
+        "2A": 144,
+        "3A": 300,
+        "SL": 0
+      }
+    },
+    "12314": {
+      "name": "Sealdah Rajdhani Express",
+      "total": 480,
+      "by_class": {
+        "1A": 24,
+        "2A": 96,
+        "3A": 360,
+        "SL": 0
+      }
+    },
+    "12324": {
+      "name": "Howrah Superfast Express",
+      "total": 816,
+      "by_class": {
+        "1A": 0,
+        "2A": 96,
+        "3A": 288,
+        "SL": 432
+      }
+    },
+    "12274": {
+      "name": "Howrah Duronto Express",
+      "total": 480,
+      "by_class": {
+        "1A": 48,
+        "2A": 144,
+        "3A": 288,
+        "SL": 0
+      }
+    },
+    "12301": {
+      "name": "New Delhi Rajdhani",
+      "total": 492,
+      "by_class": {
+        "1A": 48,
+        "2A": 144,
+        "3A": 300,
+        "SL": 0
+      }
+    },
+    "12313": {
+      "name": "New Delhi Rajdhani Express",
+      "total": 480,
+      "by_class": {
+        "1A": 24,
+        "2A": 96,
+        "3A": 360,
+        "SL": 0
+      }
+    },
+    "12323": {
+      "name": "New Delhi Superfast Express",
+      "total": 816,
+      "by_class": {
+        "1A": 0,
+        "2A": 96,
+        "3A": 288,
+        "SL": 432
+      }
+    },
+    "12273": {
+      "name": "New Delhi Duronto Express",
+      "total": 480,
+      "by_class": {
+        "1A": 48,
+        "2A": 144,
+        "3A": 288,
+        "SL": 0
+      }
+    },
+    "22159": {
+      "name": "Chennai Mail",
+      "total": 768,
+      "by_class": {
+        "1A": 0,
+        "2A": 48,
+        "3A": 216,
+        "SL": 504
+      }
+    },
+    "12163": {
+      "name": "Chennai Express",
+      "total": 768,
+      "by_class": {
+        "1A": 0,
+        "2A": 48,
+        "3A": 288,
+        "SL": 432
+      }
+    },
+    "11041": {
+      "name": "Mumbai Chennai Express",
+      "total": 768,
+      "by_class": {
+        "1A": 0,
+        "2A": 48,
+        "3A": 144,
+        "SL": 576
+      }
+    },
+    "22207": {
+      "name": "Chennai Duronto",
+      "total": 504,
+      "by_class": {
+        "1A": 48,
+        "2A": 96,
+        "3A": 360,
+        "SL": 0
+      }
+    },
+    "22160": {
+      "name": "Mumbai Mail",
+      "total": 768,
+      "by_class": {
+        "1A": 0,
+        "2A": 48,
+        "3A": 216,
+        "SL": 504
+      }
+    },
+    "12164": {
+      "name": "Mumbai Superfast Express",
+      "total": 768,
+      "by_class": {
+        "1A": 0,
+        "2A": 48,
+        "3A": 288,
+        "SL": 432
+      }
+    },
+    "11042": {
+      "name": "Chennai Mumbai Express",
+      "total": 768,
+      "by_class": {
+        "1A": 0,
+        "2A": 48,
+        "3A": 144,
+        "SL": 576
+      }
+    },
+    "22208": {
+      "name": "Mumbai Duronto",
+      "total": 504,
+      "by_class": {
+        "1A": 48,
+        "2A": 96,
+        "3A": 360,
+        "SL": 0
+      }
+    },
+    "12616": {
+      "name": "Grand Trunk Express",
+      "total": 696,
+      "by_class": {
+        "1A": 24,
+        "2A": 96,
+        "3A": 216,
+        "SL": 360
+      }
+    },
+    "12622": {
+      "name": "Tamil Nadu Express",
+      "total": 672,
+      "by_class": {
+        "1A": 24,
+        "2A": 144,
+        "3A": 216,
+        "SL": 288
+      }
+    },
+    "22692": {
+      "name": "Chennai Rajdhani Express",
+      "total": 492,
+      "by_class": {
+        "1A": 48,
+        "2A": 144,
+        "3A": 300,
+        "SL": 0
+      }
+    },
+    "12270": {
+      "name": "Chennai Duronto Express",
+      "total": 480,
+      "by_class": {
+        "1A": 48,
+        "2A": 144,
+        "3A": 288,
+        "SL": 0
+      }
+    },
+    "12615": {
+      "name": "Grand Trunk Express",
+      "total": 696,
+      "by_class": {
+        "1A": 24,
+        "2A": 96,
+        "3A": 216,
+        "SL": 360
+      }
+    },
+    "12621": {
+      "name": "Tamil Nadu Express",
+      "total": 672,
+      "by_class": {
+        "1A": 24,
+        "2A": 144,
+        "3A": 216,
+        "SL": 288
+      }
+    },
+    "22691": {
+      "name": "New Delhi Rajdhani Express",
+      "total": 492,
+      "by_class": {
+        "1A": 48,
+        "2A": 144,
+        "3A": 300,
+        "SL": 0
+      }
+    },
+    "12269": {
+      "name": "New Delhi Duronto Express",
+      "total": 480,
+      "by_class": {
+        "1A": 48,
+        "2A": 144,
+        "3A": 288,
+        "SL": 0
+      }
+    },
+    "12245": {
+      "name": "Bengaluru Duronto Express",
+      "total": 552,
+      "by_class": {
+        "1A": 48,
+        "2A": 144,
+        "3A": 360,
+        "SL": 0
+      }
+    },
+    "12863": {
+      "name": "Howrah Yesvantpur Express",
+      "total": 768,
+      "by_class": {
+        "1A": 0,
+        "2A": 48,
+        "3A": 288,
+        "SL": 432
+      }
+    },
+    "22817": {
+      "name": "Howrah Mysore Express",
+      "total": 768,
+      "by_class": {
+        "1A": 0,
+        "2A": 48,
+        "3A": 216,
+        "SL": 504
+      }
+    },
+    "12504": {
+      "name": "Bengaluru Humsafar Express",
+      "total": 1008,
+      "by_class": {
+        "1A": 0,
+        "2A": 0,
+        "3A": 1008,
+        "SL": 0
+      }
+    },
+    "12246": {
+      "name": "Howrah Duronto Express",
+      "total": 552,
+      "by_class": {
+        "1A": 48,
+        "2A": 144,
+        "3A": 360,
+        "SL": 0
+      }
+    },
+    "12864": {
+      "name": "Yesvantpur Howrah Express",
+      "total": 768,
+      "by_class": {
+        "1A": 0,
+        "2A": 48,
+        "3A": 288,
+        "SL": 432
+      }
+    },
+    "22818": {
+      "name": "Mysore Howrah Express",
+      "total": 768,
+      "by_class": {
+        "1A": 0,
+        "2A": 48,
+        "3A": 216,
+        "SL": 504
+      }
+    },
+    "12503": {
+      "name": "Agartala Humsafar Express",
+      "total": 1008,
+      "by_class": {
+        "1A": 0,
+        "2A": 0,
+        "3A": 1008,
+        "SL": 0
+      }
+    }
+  },
+  "connection_pairs": [
+    {
+      "station": "HWH",
+      "arriving_train": "12314",
+      "departing_train": "12245",
+      "arriving_time": "10:10",
+      "departing_time": "10:50",
+      "window_min": 40,
+      "passengers_at_risk": 215,
+      "risk_level": "HIGH"
+    },
+    {
+      "station": "HWH",
+      "arriving_train": "12302",
+      "departing_train": "12245",
+      "arriving_time": "09:55",
+      "departing_time": "10:50",
+      "window_min": 55,
+      "passengers_at_risk": 180,
+      "risk_level": "MEDIUM"
+    },
+    {
+      "station": "NDLS",
+      "arriving_train": "12953",
+      "departing_train": "12274",
+      "arriving_time": "09:43",
+      "departing_time": "12:40",
+      "window_min": 177,
+      "passengers_at_risk": 95,
+      "risk_level": "LOW"
+    },
+    {
+      "station": "NDLS",
+      "arriving_train": "12925",
+      "departing_train": "12274",
+      "arriving_time": "10:40",
+      "departing_time": "12:40",
+      "window_min": 120,
+      "passengers_at_risk": 110,
+      "risk_level": "LOW"
+    },
+    {
+      "station": "BZA",
+      "arriving_train": "12616",
+      "departing_train": "12863",
+      "arriving_time": "22:15",
+      "departing_time": "22:50",
+      "window_min": 35,
+      "passengers_at_risk": 340,
+      "risk_level": "HIGH"
+    },
+    {
+      "station": "BZA",
+      "arriving_train": "12622",
+      "departing_train": "12245",
+      "arriving_time": "00:30",
+      "departing_time": "01:45",
+      "window_min": 75,
+      "passengers_at_risk": 250,
+      "risk_level": "MEDIUM"
+    },
+    {
+      "station": "BPL",
+      "arriving_train": "12615",
+      "departing_train": "22691",
+      "arriving_time": "14:20",
+      "departing_time": "15:10",
+      "window_min": 50,
+      "passengers_at_risk": 165,
+      "risk_level": "MEDIUM"
+    },
+    {
+      "station": "NGP",
+      "arriving_train": "12616",
+      "departing_train": "12622",
+      "arriving_time": "06:10",
+      "departing_time": "06:40",
+      "window_min": 30,
+      "passengers_at_risk": 380,
+      "risk_level": "HIGH"
+    },
+    {
+      "station": "KOTA",
+      "arriving_train": "12951",
+      "departing_train": "12953",
+      "arriving_time": "22:45",
+      "departing_time": "23:30",
+      "window_min": 45,
+      "passengers_at_risk": 140,
+      "risk_level": "MEDIUM"
+    },
+    {
+      "station": "KOTA",
+      "arriving_train": "12909",
+      "departing_train": "12925",
+      "arriving_time": "04:15",
+      "departing_time": "05:40",
+      "window_min": 85,
+      "passengers_at_risk": 210,
+      "risk_level": "MEDIUM"
+    },
+    {
+      "station": "CNB",
+      "arriving_train": "12301",
+      "departing_train": "12313",
+      "arriving_time": "04:20",
+      "departing_time": "05:00",
+      "window_min": 40,
+      "passengers_at_risk": 290,
+      "risk_level": "HIGH"
+    },
+    {
+      "station": "CNB",
+      "arriving_train": "12323",
+      "departing_train": "12273",
+      "arriving_time": "08:15",
+      "departing_time": "09:20",
+      "window_min": 65,
+      "passengers_at_risk": 175,
+      "risk_level": "MEDIUM"
+    },
+    {
+      "station": "PUNE",
+      "arriving_train": "22160",
+      "departing_train": "12164",
+      "arriving_time": "08:30",
+      "departing_time": "09:10",
+      "window_min": 40,
+      "passengers_at_risk": 310,
+      "risk_level": "HIGH"
+    },
+    {
+      "station": "PUNE",
+      "arriving_train": "11042",
+      "departing_train": "22208",
+      "arriving_time": "09:45",
+      "departing_time": "11:20",
+      "window_min": 95,
+      "passengers_at_risk": 85,
+      "risk_level": "LOW"
+    },
+    {
+      "station": "RU",
+      "arriving_train": "12163",
+      "departing_train": "12245",
+      "arriving_time": "14:10",
+      "departing_time": "15:00",
+      "window_min": 50,
+      "passengers_at_risk": 190,
+      "risk_level": "MEDIUM"
+    },
+    {
+      "station": "VSKP",
+      "arriving_train": "12863",
+      "departing_train": "12245",
+      "arriving_time": "09:15",
+      "departing_time": "10:20",
+      "window_min": 65,
+      "passengers_at_risk": 220,
+      "risk_level": "MEDIUM"
+    },
+    {
+      "station": "VSKP",
+      "arriving_train": "22817",
+      "departing_train": "12504",
+      "arriving_time": "05:30",
+      "departing_time": "06:10",
+      "window_min": 40,
+      "passengers_at_risk": 350,
+      "risk_level": "HIGH"
+    },
+    {
+      "station": "SBC",
+      "arriving_train": "12863",
+      "departing_train": "12246",
+      "arriving_time": "07:15",
+      "departing_time": "11:00",
+      "window_min": 225,
+      "passengers_at_risk": 130,
+      "risk_level": "LOW"
+    }
+  ]
+}

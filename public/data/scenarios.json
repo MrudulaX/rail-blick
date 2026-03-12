@@ -1,0 +1,392 @@
+[
+  {
+    "id": "S01",
+    "name": "Signal failure at NDLS",
+    "trigger_station": "NDLS",
+    "delay_min": 120,
+    "description": "Major interlocking failure causing cascaded delays down the Delhi-Mumbai corridor.",
+    "propagation": [
+      {
+        "station_code": "NDLS",
+        "delay_added": 120,
+        "offset_seconds": 0,
+        "affected_trains": ["12952", "12954", "12910", "12926", "22210"]
+      },
+      {
+        "station_code": "MTJ",
+        "delay_added": 84,
+        "offset_seconds": 3000,
+        "affected_trains": ["12954", "12910", "12926"]
+      },
+      {
+        "station_code": "KOTA",
+        "delay_added": 59,
+        "offset_seconds": 6000,
+        "affected_trains": ["12952", "12954", "12910", "12926", "22210"]
+      },
+      {
+        "station_code": "RTM",
+        "delay_added": 41,
+        "offset_seconds": 9000,
+        "affected_trains": ["12952", "12954", "12910", "12926", "22210"]
+      },
+      {
+        "station_code": "BRC",
+        "delay_added": 29,
+        "offset_seconds": 12000,
+        "affected_trains": ["12952", "12954", "12910", "12926", "22210"]
+      }
+    ]
+  },
+  {
+    "id": "S02",
+    "name": "Platform blockage at ST",
+    "trigger_station": "ST",
+    "delay_min": 100,
+    "description": "A derailed freight wagon has blocked two major platforms at Surat.",
+    "propagation": [
+      {
+        "station_code": "ST",
+        "delay_added": 100,
+        "offset_seconds": 0,
+        "affected_trains": ["12951", "12953", "12909", "12925"]
+      },
+      {
+        "station_code": "BRC",
+        "delay_added": 70,
+        "offset_seconds": 3000,
+        "affected_trains": ["12951", "12953", "12909", "12925", "22209"]
+      },
+      {
+        "station_code": "RTM",
+        "delay_added": 49,
+        "offset_seconds": 6000,
+        "affected_trains": ["12951", "12953", "12909", "12925", "22209"]
+      },
+      {
+        "station_code": "KOTA",
+        "delay_added": 34,
+        "offset_seconds": 9000,
+        "affected_trains": ["12951", "12953", "12909", "12925", "22209"]
+      },
+      {
+        "station_code": "MTJ",
+        "delay_added": 24,
+        "offset_seconds": 12000,
+        "affected_trains": ["12953", "12909", "12925"]
+      },
+      {
+        "station_code": "NDLS",
+        "delay_added": 17,
+        "offset_seconds": 15000,
+        "affected_trains": ["12951", "12953", "12909", "12925", "22209"]
+      }
+    ]
+  },
+  {
+    "id": "S03",
+    "name": "Junction congestion at CNB",
+    "trigger_station": "CNB",
+    "delay_min": 150,
+    "description": "Heavy mainline traffic and yard remodeling causing severe delays at Kanpur Central.",
+    "propagation": [
+      {
+        "station_code": "CNB",
+        "delay_added": 150,
+        "offset_seconds": 0,
+        "affected_trains": ["12302", "12314", "12324", "12274"]
+      },
+      {
+        "station_code": "PRYJ",
+        "delay_added": 105,
+        "offset_seconds": 3000,
+        "affected_trains": ["12302", "12324"]
+      },
+      {
+        "station_code": "DDU",
+        "delay_added": 74,
+        "offset_seconds": 6000,
+        "affected_trains": ["12302", "12314", "12324", "12274"]
+      },
+      {
+        "station_code": "DHN",
+        "delay_added": 52,
+        "offset_seconds": 9000,
+        "affected_trains": ["12302", "12324", "12274"]
+      },
+      {
+        "station_code": "ASN",
+        "delay_added": 36,
+        "offset_seconds": 12000,
+        "affected_trains": ["12314", "12324"]
+      }
+    ]
+  },
+  {
+    "id": "S04",
+    "name": "Rolling stock breakdown at ASN",
+    "trigger_station": "ASN",
+    "delay_min": 90,
+    "description": "Locomotive failure requiring a replacement engine from the nearby shed.",
+    "propagation": [
+      {
+        "station_code": "ASN",
+        "delay_added": 90,
+        "offset_seconds": 0,
+        "affected_trains": ["12313", "12323"]
+      },
+      {
+        "station_code": "DHN",
+        "delay_added": 63,
+        "offset_seconds": 3000,
+        "affected_trains": ["12301", "12323", "12273"]
+      },
+      {
+        "station_code": "DDU",
+        "delay_added": 44,
+        "offset_seconds": 6000,
+        "affected_trains": ["12301", "12313", "12323", "12273"]
+      },
+      {
+        "station_code": "PRYJ",
+        "delay_added": 31,
+        "offset_seconds": 9000,
+        "affected_trains": ["12301", "12323"]
+      },
+      {
+        "station_code": "CNB",
+        "delay_added": 22,
+        "offset_seconds": 12000,
+        "affected_trains": ["12301", "12313", "12323", "12273"]
+      }
+    ]
+  },
+  {
+    "id": "S05",
+    "name": "Track maintenance near PUNE",
+    "trigger_station": "PUNE",
+    "delay_min": 110,
+    "description": "Unscheduled emergency track repairs limiting speed to 20 km/h.",
+    "propagation": [
+      {
+        "station_code": "PUNE",
+        "delay_added": 110,
+        "offset_seconds": 0,
+        "affected_trains": ["22159", "12163", "11041", "22207"]
+      },
+      {
+        "station_code": "SUR",
+        "delay_added": 77,
+        "offset_seconds": 3000,
+        "affected_trains": ["22159", "12163", "11041"]
+      },
+      {
+        "station_code": "WADI",
+        "delay_added": 54,
+        "offset_seconds": 6000,
+        "affected_trains": ["22159", "12163", "11041"]
+      },
+      {
+        "station_code": "RC",
+        "delay_added": 38,
+        "offset_seconds": 9000,
+        "affected_trains": ["22159", "12163"]
+      },
+      {
+        "station_code": "GTL",
+        "delay_added": 27,
+        "offset_seconds": 12000,
+        "affected_trains": ["22159", "12163", "11041"]
+      }
+    ]
+  },
+  {
+    "id": "S06",
+    "name": "Weather disruption at RU",
+    "trigger_station": "RU",
+    "delay_min": 130,
+    "description": "Heavy localized flooding over the tracks causing severe speed restrictions.",
+    "propagation": [
+      {
+        "station_code": "RU",
+        "delay_added": 130,
+        "offset_seconds": 0,
+        "affected_trains": ["22160", "12164", "11042", "22208"]
+      },
+      {
+        "station_code": "GTL",
+        "delay_added": 91,
+        "offset_seconds": 3000,
+        "affected_trains": ["22160", "12164", "11042"]
+      },
+      {
+        "station_code": "WADI",
+        "delay_added": 64,
+        "offset_seconds": 6000,
+        "affected_trains": ["22160", "12164", "11042"]
+      },
+      {
+        "station_code": "SUR",
+        "delay_added": 45,
+        "offset_seconds": 9000,
+        "affected_trains": ["22160", "12164", "11042"]
+      },
+      {
+        "station_code": "PUNE",
+        "delay_added": 32,
+        "offset_seconds": 12000,
+        "affected_trains": ["22160", "12164", "11042", "22208"]
+      }
+    ]
+  },
+  {
+    "id": "S07",
+    "name": "Overhead equipment failure at BPL",
+    "trigger_station": "BPL",
+    "delay_min": 140,
+    "description": "OHE line snapped due to storm, requiring diesel loco attachments.",
+    "propagation": [
+      {
+        "station_code": "BPL",
+        "delay_added": 140,
+        "offset_seconds": 0,
+        "affected_trains": ["12616", "12622", "22692", "12270"]
+      },
+      {
+        "station_code": "NGP",
+        "delay_added": 98,
+        "offset_seconds": 3000,
+        "affected_trains": ["12616", "12622", "22692", "12270"]
+      },
+      {
+        "station_code": "BPQ",
+        "delay_added": 69,
+        "offset_seconds": 6000,
+        "affected_trains": ["12616", "12622"]
+      },
+      {
+        "station_code": "WL",
+        "delay_added": 48,
+        "offset_seconds": 9000,
+        "affected_trains": ["12616"]
+      },
+      {
+        "station_code": "BZA",
+        "delay_added": 34,
+        "offset_seconds": 12000,
+        "affected_trains": ["12616", "12622", "22692", "12270"]
+      }
+    ]
+  },
+  {
+    "id": "S08",
+    "name": "Signal failure at BZA",
+    "trigger_station": "BZA",
+    "delay_min": 125,
+    "description": "Panel interlocking failure causing manual signaling and bottlenecks.",
+    "propagation": [
+      {
+        "station_code": "BZA",
+        "delay_added": 125,
+        "offset_seconds": 0,
+        "affected_trains": ["12615", "12621", "22691", "12269"]
+      },
+      {
+        "station_code": "WL",
+        "delay_added": 88,
+        "offset_seconds": 3000,
+        "affected_trains": ["12615"]
+      },
+      {
+        "station_code": "BPQ",
+        "delay_added": 62,
+        "offset_seconds": 6000,
+        "affected_trains": ["12615", "12621"]
+      },
+      {
+        "station_code": "NGP",
+        "delay_added": 43,
+        "offset_seconds": 9000,
+        "affected_trains": ["12615", "12621", "22691", "12269"]
+      },
+      {
+        "station_code": "BPL",
+        "delay_added": 30,
+        "offset_seconds": 12000,
+        "affected_trains": ["12615", "12621", "22691", "12269"]
+      }
+    ]
+  },
+  {
+    "id": "S09",
+    "name": "Staff protest near BBS",
+    "trigger_station": "BBS",
+    "delay_min": 95,
+    "description": "Local agitation blocking tracks, halting all downward traffic temporarily.",
+    "propagation": [
+      {
+        "station_code": "BBS",
+        "delay_added": 95,
+        "offset_seconds": 0,
+        "affected_trains": ["12245", "12863", "22817", "12504"]
+      },
+      {
+        "station_code": "VSKP",
+        "delay_added": 67,
+        "offset_seconds": 3000,
+        "affected_trains": ["12245", "12863", "22817", "12504"]
+      },
+      {
+        "station_code": "BZA",
+        "delay_added": 47,
+        "offset_seconds": 6000,
+        "affected_trains": ["12245", "12863", "22817", "12504"]
+      },
+      {
+        "station_code": "RU",
+        "delay_added": 33,
+        "offset_seconds": 9000,
+        "affected_trains": ["12245", "12863", "22817"]
+      },
+      {
+        "station_code": "KPD",
+        "delay_added": 23,
+        "offset_seconds": 12000,
+        "affected_trains": ["12863", "22817", "12504"]
+      }
+    ]
+  },
+  {
+    "id": "S10",
+    "name": "Heavy fog near VSKP",
+    "trigger_station": "VSKP",
+    "delay_min": 105,
+    "description": "Zero visibility conditions enforcing severe speed limits on upward trains.",
+    "propagation": [
+      {
+        "station_code": "VSKP",
+        "delay_added": 105,
+        "offset_seconds": 0,
+        "affected_trains": ["12246", "12864", "22818", "12503"]
+      },
+      {
+        "station_code": "BBS",
+        "delay_added": 74,
+        "offset_seconds": 3000,
+        "affected_trains": ["12246", "12864", "22818", "12503"]
+      },
+      {
+        "station_code": "KGP",
+        "delay_added": 52,
+        "offset_seconds": 6000,
+        "affected_trains": ["12864", "22818", "12503"]
+      },
+      {
+        "station_code": "HWH",
+        "delay_added": 36,
+        "offset_seconds": 9000,
+        "affected_trains": ["12246", "12864", "22818", "12503"]
+      }
+    ]
+  }
+]
