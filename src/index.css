@@ -1,85 +1,18 @@
 @import "leaflet/dist/leaflet.css";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Cyber dark theme */
-:root {
-  --bg-main: #0a0f1c;
-  --bg-panel: #111827;
-  --accent: #00e5ff;
-  --text-primary: #e5e7eb;
-}
-
-body {
-  background: var(--bg-main);
-  color: var(--text-primary);
-  margin: 0;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
-
-/* Map container */
+/* Reset Leaflet background to be dark so it blends with our theme before tiles load */
 .leaflet-container {
-  height: 100vh;
-  width: 100%;
+    background: #0a0a14 !important;
 }
 
-/* ========================= */
-/* Station Marker Status Colors */
-/* ========================= */
-
-.marker-normal { fill: #00FF87; }
-.marker-warning { fill: #FFD700; }
-.marker-danger { fill: #FF8800; }
-.marker-critical { fill: #FF4444; }
-
-/* ========================= */
-/* Pulse Effect for Critical Stations */
-/* ========================= */
-
-@keyframes pulse-critical {
-  0% { filter: drop-shadow(0 0 2px rgba(255, 68, 68, 0.4)); transform: scale(1); }
-  50% { filter: drop-shadow(0 0 10px rgba(255, 68, 68, 0.9)); transform: scale(1.3); }
-  100% { filter: drop-shadow(0 0 2px rgba(255, 68, 68, 0.4)); transform: scale(1); }
+/* Custom CSS animation for affected stations */
+@keyframes map-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(239, 68, 68, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
 }
 
-.marker-critical {
-  animation: pulse-critical 1.5s infinite;
-  transform-origin: center;
-}
-
-/* ========================= */
-/* Corridor Line Colors */
-/* ========================= */
-
-.corridor-normal {
-  stroke: #4a4a6a;
-  stroke-width: 2;
-}
-
-.corridor-active {
-  stroke: #FF4444;
-  stroke-width: 3;
-}
-/* Station Marker Status Colors */
-.marker-normal { fill: #00FF87; }
-.marker-warning { fill: #FFD700; }
-.marker-danger { fill: #FF8800; }
-.marker-critical { fill: #FF4444; }
-
-/* The Pulse Effect for Critical Stations */
-@keyframes pulse-critical {
-  0% { filter: drop-shadow(0 0 2px rgba(255, 68, 68, 0.4)); transform: scale(1); }
-  50% { filter: drop-shadow(0 0 10px rgba(255, 68, 68, 0.9)); transform: scale(1.3); }
-  100% { filter: drop-shadow(0 0 2px rgba(255, 68, 68, 0.4)); transform: scale(1); }
-}
-
-.marker-critical {
-  animation: pulse-critical 1.5s infinite;
-  transform-origin: center;
-}
-
-/* Corridor Line Colors */
-.corridor-normal { stroke: #4a4a6a; stroke-width: 2; }
-.corridor-active { stroke: #FF4444; stroke-width: 3; }
+.station-marker-normal { background-color: #22c55e; border: 2px solid #000; border-radius: 50%; opacity: 0.8;}
+.station-marker-yellow { background-color: #eab308; border: 2px solid #000; border-radius: 50%; }
+.station-marker-orange { background-color: #f97316; border: 2px solid #000; border-radius: 50%; }
+.station-marker-red { background-color: #ef4444; border: 2px solid #fff; border-radius: 50%; animation: map-pulse 2s infinite; z-index: 1000 !important; }
