@@ -1,33 +1,37 @@
-import React from 'react';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-
-// Mock data: P(confirmation) before vs after the delay cascade hits
-const mockWaitlistData = [
-  { train: '12951 Rajdhani', before: 82, after: 31 },
-  { train: '12269 Duronto', before: 75, after: 12 },
-  { train: '12002 Shatabdi', before: 94, after: 44 },
-  { train: '12627 Karnataka', before: 50, after: 5 }
-];
+import { useContext } from 'react';
+import { CascadeContext } from '../context/CascadeContext';
+import { BarChart, Bar, XAxis, YAxis, Tooltip as RechartsTooltip, ResponsiveContainer, CartesianGrid, Legend } from 'recharts';
 
 export default function WaitlistIntelligence() {
+  const { activeCascade } = useContext(CascadeContext);
+
+  // Mock data - in reality, Dev 3 computes this by calling Dev 1's XGBoost logic
+  const mockWaitlistData = [
+    { train: '12952', before: 82, after: 41 },
+    { train: '12954', before: 67, after: 34 },
+    { train: '12926', before: 59, after: 18 },
+    { train: '12216', before: 45, after: 12 },
+  ];
+
+  if (!activeCascade) return null;
+
   return (
-    <div className="bg-cyber-panel border border-cyber-border rounded-lg p-5 mt-4">
-      <h3 className="text-cyber-accent text-[11px] tracking-widest uppercase mb-4">
-        Waitlist Confirmation Risk Analysis (XGBoost)
-      </h3>
+    <div className="bg-[#0a0a14] border border-gray-800 rounded-lg p-5">
+      <div className="text-xs font-bold text-gray-400 tracking-widest mb-4">CONFIRMATION PROBABILITY COLLAPSE</div>
       
-      <div className="h-[200px] w-full">
+      <div className="h-64 mt-4 text-xs font-mono">
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={mockWaitlistData} margin={{ top: 5, right: 0, left: -20, bottom: 5 }}>
-            <XAxis dataKey="train" stroke="#4a4a6a" fontSize={10} tickLine={false} />
-            <YAxis stroke="#4a4a6a" fontSize={10} tickLine={false} tickFormatter={(val) => `${val}%`} />
-            <Tooltip 
-              cursor={{ fill: '#252535' }}
-              contentStyle={{ backgroundColor: '#10101a', border: '1px solid #1a1a28', fontSize: '11px' }}
+          <BarChart data={mockWaitlistData} margin={{ top: 5, right: 5, left: -20, bottom: 0 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke="#333344" vertical={false} />
+            <XAxis dataKey="train" stroke="#888899" tick={{fill: '#888899'}} />
+            <YAxis stroke="#888899" tick={{fill: '#888899'}} dx={-5} />
+            <RechartsTooltip 
+              contentStyle={{ backgroundColor: '#0a0a14', borderColor: '#333344', color: '#fff' }}
+              itemStyle={{ fontFamily: 'monospace' }}
             />
             <Legend wrapperStyle={{ fontSize: '10px', paddingTop: '10px' }} />
-            <Bar dataKey="before" name="Before Cascade" fill="#00FF87" radius={[2, 2, 0, 0]} />
-            <Bar dataKey="after" name="After Cascade" fill="#FF4444" radius={[2, 2, 0, 0]} />
+            <Bar dataKey="before" name="WL Conf. Before" fill="#22c55e" radius={[2, 2, 0, 0]} />
+            <Bar dataKey="after" name="WL Conf. After" fill="#ef4444" radius={[2, 2, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </div>
