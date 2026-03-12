@@ -1,0 +1,85 @@
+@import "leaflet/dist/leaflet.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Cyber dark theme */
+:root {
+  --bg-main: #0a0f1c;
+  --bg-panel: #111827;
+  --accent: #00e5ff;
+  --text-primary: #e5e7eb;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-primary);
+  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Map container */
+.leaflet-container {
+  height: 100vh;
+  width: 100%;
+}
+
+/* ========================= */
+/* Station Marker Status Colors */
+/* ========================= */
+
+.marker-normal { fill: #00FF87; }
+.marker-warning { fill: #FFD700; }
+.marker-danger { fill: #FF8800; }
+.marker-critical { fill: #FF4444; }
+
+/* ========================= */
+/* Pulse Effect for Critical Stations */
+/* ========================= */
+
+@keyframes pulse-critical {
+  0% { filter: drop-shadow(0 0 2px rgba(255, 68, 68, 0.4)); transform: scale(1); }
+  50% { filter: drop-shadow(0 0 10px rgba(255, 68, 68, 0.9)); transform: scale(1.3); }
+  100% { filter: drop-shadow(0 0 2px rgba(255, 68, 68, 0.4)); transform: scale(1); }
+}
+
+.marker-critical {
+  animation: pulse-critical 1.5s infinite;
+  transform-origin: center;
+}
+
+/* ========================= */
+/* Corridor Line Colors */
+/* ========================= */
+
+.corridor-normal {
+  stroke: #4a4a6a;
+  stroke-width: 2;
+}
+
+.corridor-active {
+  stroke: #FF4444;
+  stroke-width: 3;
+}
+/* Station Marker Status Colors */
+.marker-normal { fill: #00FF87; }
+.marker-warning { fill: #FFD700; }
+.marker-danger { fill: #FF8800; }
+.marker-critical { fill: #FF4444; }
+
+/* The Pulse Effect for Critical Stations */
+@keyframes pulse-critical {
+  0% { filter: drop-shadow(0 0 2px rgba(255, 68, 68, 0.4)); transform: scale(1); }
+  50% { filter: drop-shadow(0 0 10px rgba(255, 68, 68, 0.9)); transform: scale(1.3); }
+  100% { filter: drop-shadow(0 0 2px rgba(255, 68, 68, 0.4)); transform: scale(1); }
+}
+
+.marker-critical {
+  animation: pulse-critical 1.5s infinite;
+  transform-origin: center;
+}
+
+/* Corridor Line Colors */
+.corridor-normal { stroke: #4a4a6a; stroke-width: 2; }
+.corridor-active { stroke: #FF4444; stroke-width: 3; }
