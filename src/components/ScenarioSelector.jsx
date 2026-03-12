@@ -1,51 +1,39 @@
-import React, { useState } from 'react';
+import { useContext } from 'react';
+import { CascadeContext } from '../context/CascadeContext';
+import { Play } from 'lucide-react';
 
-const mockScenarios = [
-  { id: 'S1', trigger: 'NDLS', name: 'New Delhi Severe Congestion', delay: '120 min', impact: '~14k passengers' },
-  { id: 'S2', trigger: 'NGP', name: 'Nagpur Signal Failure', delay: '180 min', impact: '~22k passengers' },
-  { id: 'S3', trigger: 'BCT', name: 'Mumbai Platform Closure', delay: '90 min', impact: '~8k passengers' }
-];
+export default function ScenarioSelector() {
+  const { data, activeCascade, triggerScenario } = useContext(CascadeContext);
 
-// In Phase 4, onScenarioClick will trigger the actual cascade context
-export default function ScenarioSelector({ onScenarioClick }) {
-  const [activeId, setActiveId] = useState(null);
-
-  const handleClick = (scenario) => {
-    setActiveId(scenario.id);
-    if (onScenarioClick) onScenarioClick(scenario);
-  };
+  // Get first 10 scenarios
+  const scenarios = data.scenarios?.slice(0, 5) || []; // Just 5 for UI spacing right now
 
   return (
-    <div className="bg-cyber-panel border border-cyber-border rounded-lg p-5 mt-4">
-      <h3 className="text-cyber-muted text-[11px] tracking-widest uppercase mb-4">
-        Select Cascade Scenario
-      </h3>
-      
-      <div className="flex flex-col gap-2">
-        {mockScenarios.map(s => (
-          <button
-            key={s.id}
-            onClick={() => handleClick(s)}
-            className={`w-full text-left p-3 rounded-md border transition-all ${
-              activeId === s.id 
-                ? 'bg-cyber-accent/10 border-cyber-accent border-l-4 border-l-cyber-accent' 
-                : 'bg-cyber-card border-cyber-border hover:border-cyber-muted'
-            }`}
+    <div className="flex gap-4 overflow-x-auto pb-2 hidden-scrollbar">
+      {scenarios.map((scenario) => {
+        const isActive = activeCascade?.id === scenario.id;
+        return (
+          <div 
+            key={scenario.id}
+            onClick={() => triggerScenario(scenario.id)}
+            className={`
+              flex-shrink-0 w-64 bg-[#0a0a14]/90 backdrop-blur border rounded-lg p-3 cursor-pointer transition-all hover:-translate-y-1
+              ${isActive ? 'border-red-500 shadow-[0_0_15px_rgba(239,68,68,0.2)]' : 'border-gray-800 hover:border-gray-500'}
+            `}
           >
-            <div className="flex justify-between items-center mb-1">
-              <span className={`text-xs font-bold ${activeId === s.id ? 'text-cyber-accent' : 'text-cyber-white'}`}>
-                {s.name}
-              </span>
-              <span className="text-[10px] text-cyber-danger bg-cyber-danger/10 px-2 py-0.5 rounded">
-                {s.delay}
-              </span>
+            <div className="text-[10px] text-gray-500 tracking-widest mb-1">{scenario.id.toUpperCase()}</div>
+            <div className="text-sm font-bold text-white truncate">{scenario.name}</div>
+            <div className="mt-3 flex justify-between items-center">
+              <div className="text-xs">
+                <span className="text-gray-400">{scenario.trigger_station}</span> · <span className="text-orange-400 font-bold">{scenario.delay_min}m</span>
+              </div>
+              <button className={`w-6 h-6 rounded-full flex items-center justify-center ${isActive ? 'bg-red-500 text-white' : 'bg-gray-800 text-gray-400'}`}>
+                {isActive ? <div className="w-2 h-2 bg-white rounded-sm" /> : <Play className="w-3 h-3 ml-0.5" />}
+              </button>
             </div>
-            <div className="text-[10px] text-cyber-muted">
-              Origin: {s.trigger} | Est. Impact: {s.impact}
-            </div>
-          </button>
-        ))}
-      </div>
+          </div>
+        );
+      })}
     </div>
   );
 }
