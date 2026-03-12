@@ -22,3 +22,15 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment — never commit API keys
+.env
+.env.*
+
+# Large generated training data (not needed in repo)
+scripts/pnr_synthetic.csv
+scripts/__pycache__/
+scripts/*.pyc
+
+# OS
+Thumbs.db
