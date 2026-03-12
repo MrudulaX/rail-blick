@@ -1,36 +1,39 @@
 import React from 'react';
 
-const mockAlternatives = [
-  { rank: 1, train: '12926 Paschim Exp', route: 'NDLS → BCT', risk: 'LOW', wl: 'WL/12' },
-  { rank: 2, train: '12215 Garib Rath', route: 'DEE → BDTS', risk: 'MED', wl: 'WL/45' },
-  { rank: 3, train: '19024 FZR BCT Janta', route: 'NDLS → BCT', risk: 'HIGH', wl: 'RAC/10' }
-];
+export default function MetricsDashboard() {
+  // Mock data for Phase 4
+  const healthScore = 84; 
+  const activeCascades = 1;
+  const totalRisk = '14.2K';
 
-export default function AlternativeRoutes() {
   return (
-    <div className="bg-cyber-panel border border-cyber-border rounded-lg p-5 mt-4">
-      <h3 className="text-cyber-accent text-[11px] tracking-widest uppercase mb-4">
-        Alternative Route Inference
-      </h3>
-      
-      <div className="flex flex-col gap-2">
-        {mockAlternatives.map(alt => (
-          <div key={alt.rank} className="bg-cyber-card border border-cyber-border rounded p-3 flex justify-between items-center">
-            <div>
-              <div className="text-cyber-white text-xs font-bold font-mono">#{alt.rank} {alt.train}</div>
-              <div className="text-cyber-muted text-[10px]">{alt.route} | {alt.wl}</div>
-            </div>
-            
-            {/* Risk Badge */}
-            <span className={`text-[9px] font-bold px-2 py-1 rounded tracking-widest ${
-              alt.risk === 'LOW' ? 'bg-[#00FF8722] text-[#00FF87]' :
-              alt.risk === 'MED' ? 'bg-[#FFD70022] text-[#FFD700]' :
-              'bg-[#FF444422] text-[#FF4444]'
-            }`}>
-              {alt.risk} RISK
-            </span>
-          </div>
-        ))}
+    <div className="h-14 bg-cyber-panel border border-cyber-border rounded-lg px-6 flex justify-between items-center">
+      {/* Brand */}
+      <div className="flex items-center gap-3">
+        <div className="w-2 h-2 rounded-full bg-cyber-accent animate-pulse"></div>
+        <h1 className="text-cyber-white font-bold tracking-widest text-sm">
+          RAILSENTINEL <span className="text-cyber-accent">OS</span>
+        </h1>
+      </div>
+
+      {/* Metrics */}
+      <div className="flex gap-8">
+        <div className="flex flex-col items-end">
+          <span className="text-cyber-muted text-[9px] tracking-widest">NETWORK HEALTH</span>
+          <span className={`font-mono font-bold text-sm ${healthScore > 90 ? 'text-[#00FF87]' : healthScore > 70 ? 'text-[#FFD700]' : 'text-[#FF4444]'}`}>
+            {healthScore}%
+          </span>
+        </div>
+        
+        <div className="flex flex-col items-end border-l border-cyber-border pl-8">
+          <span className="text-cyber-muted text-[9px] tracking-widest">ACTIVE CASCADES</span>
+          <span className="font-mono font-bold text-sm text-cyber-danger">{activeCascades}</span>
+        </div>
+
+        <div className="flex flex-col items-end border-l border-cyber-border pl-8">
+          <span className="text-cyber-muted text-[9px] tracking-widest">TTL PAX RISK</span>
+          <span className="font-mono font-bold text-sm text-cyber-white">{totalRisk}</span>
+        </div>
       </div>
     </div>
   );
