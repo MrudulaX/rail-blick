@@ -1,0 +1,87 @@
+[
+  {
+    "id": "C1",
+    "name": "Delhi–Mumbai",
+    "color": "#FF5733",
+    "stations": [
+      "NDLS",
+      "MTJ",
+      "KOTA",
+      "RTM",
+      "BRC",
+      "ST",
+      "BVI",
+      "MMCT"
+    ],
+    "total_distance_km": 1386,
+    "track_type": "electrified_double"
+  },
+  {
+    "id": "C2",
+    "name": "Delhi–Kolkata",
+    "color": "#33FF57",
+    "stations": [
+      "NDLS",
+      "CNB",
+      "PRYJ",
+      "DDU",
+      "DHN",
+      "ASN",
+      "HWH"
+    ],
+    "total_distance_km": 1450,
+    "track_type": "electrified_double"
+  },
+  {
+    "id": "C3",
+    "name": "Mumbai–Chennai",
+    "color": "#3357FF",
+    "stations": [
+      "CSMT",
+      "PUNE",
+      "SUR",
+      "WADI",
+      "RC",
+      "GTL",
+      "RU",
+      "MAS"
+    ],
+    "total_distance_km": 1281,
+    "track_type": "electrified_double"
+  },
+  {
+    "id": "C4",
+    "name": "Delhi–Chennai",
+    "color": "#F333FF",
+    "stations": [
+      "NDLS",
+      "AGC",
+      "VGLJ",
+      "BPL",
+      "NGP",
+      "BPQ",
+      "WL",
+      "BZA",
+      "MAS"
+    ],
+    "total_distance_km": 2176,
+    "track_type": "electrified_double"
+  },
+  {
+    "id": "C5",
+    "name": "Kolkata–Bengaluru",
+    "color": "#FFC300",
+    "stations": [
+      "HWH",
+      "KGP",
+      "BBS",
+      "VSKP",
+      "BZA",
+      "RU",
+      "KPD",
+      "SBC"
+    ],
+    "total_distance_km": 1946,
+    "track_type": "electrified_double"
+  }
+]
